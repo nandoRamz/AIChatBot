@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5C35D02E4F8F21001613EC /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35CF2E4F8F21001613EC /* TabBarScreen.swift */; };
+		AB5C35D42E4FFA8D001613EC /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35D32E4FFA8D001613EC /* SystemImage.swift */; };
+		AB5C35D92E4FFBCE001613EC /* ExploreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35D82E4FFBCE001613EC /* ExploreScreen.swift */; };
+		AB5C35DB2E4FFBED001613EC /* ChatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35DA2E4FFBED001613EC /* ChatsScreen.swift */; };
+		AB5C35DE2E4FFC13001613EC /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35DD2E4FFC13001613EC /* ProfileScreen.swift */; };
+		AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35E02E4FFD2A001613EC /* SettingsButton.swift */; };
+		AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35E42E4FFF3B001613EC /* WelcomeScreen.swift */; };
 		ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */; };
 		ABAE1C9E2E4F72D700CAA272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */; };
 		ABAE1CA12E4F72D700CAA272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB5C35CF2E4F8F21001613EC /* TabBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
+		AB5C35D32E4FFA8D001613EC /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
+		AB5C35D82E4FFBCE001613EC /* ExploreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreen.swift; sourceTree = "<group>"; };
+		AB5C35DA2E4FFBED001613EC /* ChatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsScreen.swift; sourceTree = "<group>"; };
+		AB5C35DD2E4FFC13001613EC /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		AB5C35E02E4FFD2A001613EC /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		AB5C35E42E4FFF3B001613EC /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		ABAE1C962E4F72D500CAA272 /* AIChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatBotApp.swift; sourceTree = "<group>"; };
 		ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +48,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5C35CD2E4F8EB6001613EC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AB5C35CE2E4F8EC0001613EC /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35CF2E4F8F21001613EC /* TabBarScreen.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		AB5C35D12E4F9072001613EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35D32E4FFA8D001613EC /* SystemImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AB5C35D52E4FFAE0001613EC /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35D82E4FFBCE001613EC /* ExploreScreen.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		AB5C35D62E4FFAE5001613EC /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35DA2E4FFBED001613EC /* ChatsScreen.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		AB5C35D72E4FFAEB001613EC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35DD2E4FFC13001613EC /* ProfileScreen.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AB5C35DF2E4FFD12001613EC /* Global Components */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35E02E4FFD2A001613EC /* SettingsButton.swift */,
+			);
+			path = "Global Components";
+			sourceTree = "<group>";
+		};
+		AB5C35E32E4FFF1D001613EC /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35E42E4FFF3B001613EC /* WelcomeScreen.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		ABAE1C8D2E4F72D400CAA272 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +132,8 @@
 			children = (
 				ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */,
 				ABAE1CA82E4F7DAB00CAA272 /* Core */,
+				AB5C35DF2E4FFD12001613EC /* Global Components */,
+				AB5C35D12E4F9072001613EC /* Helpers */,
 				ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */,
 				ABAE1C9F2E4F72D700CAA272 /* Preview Content */,
 			);
@@ -72,18 +151,24 @@
 		ABAE1CA82E4F7DAB00CAA272 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				ABAE1CA92E4F7DCE00CAA272 /* Main App Screen */,
+				ABAE1CA92E4F7DCE00CAA272 /* App Content */,
+				AB5C35E32E4FFF1D001613EC /* Welcome */,
+				AB5C35D72E4FFAEB001613EC /* Profile */,
+				AB5C35D62E4FFAE5001613EC /* Chats */,
+				AB5C35D52E4FFAE0001613EC /* Explore */,
+				AB5C35CD2E4F8EB6001613EC /* Onboarding */,
+				AB5C35CE2E4F8EC0001613EC /* Tab Bar */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		ABAE1CA92E4F7DCE00CAA272 /* Main App Screen */ = {
+		ABAE1CA92E4F7DCE00CAA272 /* App Content */ = {
 			isa = PBXGroup;
 			children = (
 				ABAE1CAA2E4F7E0800CAA272 /* MainAppScreen.swift */,
 				ABAE1CAF2E4F841C00CAA272 /* Components */,
 			);
-			path = "Main App Screen";
+			path = "App Content";
 			sourceTree = "<group>";
 		};
 		ABAE1CAF2E4F841C00CAA272 /* Components */ = {
@@ -163,7 +248,6 @@
 /* Begin PBXShellScriptBuildPhase section */
 		ABAE1CA72E4F78B500CAA272 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -188,8 +272,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
+				AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */,
+				AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */,
+				AB5C35D92E4FFBCE001613EC /* ExploreScreen.swift in Sources */,
+				AB5C35D02E4F8F21001613EC /* TabBarScreen.swift in Sources */,
+				AB5C35DB2E4FFBED001613EC /* ChatsScreen.swift in Sources */,
 				ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */,
+				AB5C35D42E4FFA8D001613EC /* SystemImage.swift in Sources */,
 				ABAE1CAB2E4F7E0800CAA272 /* MainAppScreen.swift in Sources */,
+				AB5C35DE2E4FFC13001613EC /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
