@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */; };
-		ABAE1C9C2E4F72D500CAA272 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C9B2E4F72D500CAA272 /* ContentView.swift */; };
 		ABAE1C9E2E4F72D700CAA272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */; };
 		ABAE1CA12E4F72D700CAA272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */; };
+		ABAE1CAB2E4F7E0800CAA272 /* MainAppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1CAA2E4F7E0800CAA272 /* MainAppScreen.swift */; };
+		ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1CAD2E4F832600CAA272 /* AppViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABAE1C962E4F72D500CAA272 /* AIChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatBotApp.swift; sourceTree = "<group>"; };
-		ABAE1C9B2E4F72D500CAA272 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABAE1CAA2E4F7E0800CAA272 /* MainAppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppScreen.swift; sourceTree = "<group>"; };
+		ABAE1CAD2E4F832600CAA272 /* AppViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */,
-				ABAE1C9B2E4F72D500CAA272 /* ContentView.swift */,
+				ABAE1CA82E4F7DAB00CAA272 /* Core */,
 				ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */,
 				ABAE1C9F2E4F72D700CAA272 /* Preview Content */,
 			);
@@ -65,6 +67,31 @@
 				ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABAE1CA82E4F7DAB00CAA272 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE1CA92E4F7DCE00CAA272 /* Main App Screen */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ABAE1CA92E4F7DCE00CAA272 /* Main App Screen */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE1CAA2E4F7E0800CAA272 /* MainAppScreen.swift */,
+				ABAE1CAF2E4F841C00CAA272 /* Components */,
+			);
+			path = "Main App Screen";
+			sourceTree = "<group>";
+		};
+		ABAE1CAF2E4F841C00CAA272 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE1CAD2E4F832600CAA272 /* AppViewBuilder.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAE1C9C2E4F72D500CAA272 /* ContentView.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
+				ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */,
+				ABAE1CAB2E4F7E0800CAA272 /* MainAppScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
