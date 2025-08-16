@@ -10,14 +10,13 @@ import SwiftUI
 struct SettingsButton: View {
     @State private var isShowingSettingsScreen: Bool = false
     
+    var navManager: NavigationManager
+    
     var body: some View {
         Button {
             onPress()
         } label: {
             label
-        }
-        .sheet(isPresented: $isShowingSettingsScreen) {
-            Text("Settings View")
         }
     }
 }
@@ -35,10 +34,10 @@ extension SettingsButton {
 /// Actions
 extension SettingsButton {
     private func onPress() {
-        isShowingSettingsScreen.toggle()
+        navManager.path.append(SettingsDestination.root)
     }
 }
 
 #Preview {
-    SettingsButton()
+    SettingsButton(navManager: NavigationManager())
 }

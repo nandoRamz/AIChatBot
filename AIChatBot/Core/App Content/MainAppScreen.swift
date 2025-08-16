@@ -8,25 +8,22 @@
 import SwiftUI
 
 struct MainAppScreen: View {
-    @State private var isShowingTabBarView: Bool = false
-    
-    init(isShowingTabBarView: Bool = false) {
-        _isShowingTabBarView = State(wrappedValue: isShowingTabBarView)
-    }
+    @State var appState = AppState()
     
     var body: some View {
         AppViewBuilder(
-            isShowingTabBarView: isShowingTabBarView,
+            isShowingTabBarView: appState.isShowingTabBar,
             tabBarView: { TabBarScreen() },
             onboardingView: { WelcomeScreen() }
         )
+        .environment(appState)
     }
 }
 
 #Preview("Tab Bar") {
-    MainAppScreen(isShowingTabBarView: true)
+    MainAppScreen(appState: .init(isShowingTabBar: true))
 }
 
 #Preview("Welcome") {
-    MainAppScreen(isShowingTabBarView: false)
+    MainAppScreen(appState: .init(isShowingTabBar: false))
 }

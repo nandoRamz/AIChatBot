@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct ProfileScreen: View {
+    @State private var navManager = NavigationManager()
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $navManager.path) {
             Text("Profile")
                 .navigationTitle("Profile")
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        SettingsButton(navManager: navManager)
+                    }
+                }
+                .settingsDestinations()
         }
     }
 }

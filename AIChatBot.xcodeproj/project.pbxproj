@@ -14,6 +14,13 @@
 		AB5C35DE2E4FFC13001613EC /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35DD2E4FFC13001613EC /* ProfileScreen.swift */; };
 		AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35E02E4FFD2A001613EC /* SettingsButton.swift */; };
 		AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C35E42E4FFF3B001613EC /* WelcomeScreen.swift */; };
+		AB9350FA2E50BAE0002B722D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9350F92E50BAE0002B722D /* AppState.swift */; };
+		AB9350FC2E50C2D7002B722D /* OnboardingCompletedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9350FB2E50C2D7002B722D /* OnboardingCompletedScreen.swift */; };
+		AB9350FE2E50C34E002B722D /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9350FD2E50C34E002B722D /* PrimaryButton.swift */; };
+		AB9351062E50C8E9002B722D /* Onboarding+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351052E50C8E9002B722D /* Onboarding+Destination.swift */; };
+		AB9351082E50CA70002B722D /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351072E50CA70002B722D /* NavigationManager.swift */; };
+		AB93510C2E50CECE002B722D /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93510B2E50CECE002B722D /* SettingsScreen.swift */; };
+		AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93510E2E50D1E1002B722D /* Settings+Destination.swift */; };
 		ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */; };
 		ABAE1C9E2E4F72D700CAA272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */; };
 		ABAE1CA12E4F72D700CAA272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */; };
@@ -29,6 +36,13 @@
 		AB5C35DD2E4FFC13001613EC /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		AB5C35E02E4FFD2A001613EC /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		AB5C35E42E4FFF3B001613EC /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		AB9350F92E50BAE0002B722D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AB9350FB2E50C2D7002B722D /* OnboardingCompletedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCompletedScreen.swift; sourceTree = "<group>"; };
+		AB9350FD2E50C34E002B722D /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		AB9351052E50C8E9002B722D /* Onboarding+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+Destination.swift"; sourceTree = "<group>"; };
+		AB9351072E50CA70002B722D /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		AB93510B2E50CECE002B722D /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		AB93510E2E50D1E1002B722D /* Settings+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Destination.swift"; sourceTree = "<group>"; };
 		ABAE1C962E4F72D500CAA272 /* AIChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatBotApp.swift; sourceTree = "<group>"; };
 		ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +65,8 @@
 		AB5C35CD2E4F8EB6001613EC /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				AB9351052E50C8E9002B722D /* Onboarding+Destination.swift */,
+				AB9351022E50C7EA002B722D /* Screens */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -67,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				AB5C35D32E4FFA8D001613EC /* SystemImage.swift */,
+				AB9351072E50CA70002B722D /* NavigationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -98,17 +115,50 @@
 		AB5C35DF2E4FFD12001613EC /* Global Components */ = {
 			isa = PBXGroup;
 			children = (
-				AB5C35E02E4FFD2A001613EC /* SettingsButton.swift */,
+				AB93510D2E50D1CC002B722D /* Settings Button */,
+				AB9350FD2E50C34E002B722D /* PrimaryButton.swift */,
 			);
 			path = "Global Components";
 			sourceTree = "<group>";
 		};
-		AB5C35E32E4FFF1D001613EC /* Welcome */ = {
+		AB9351022E50C7EA002B722D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				AB5C35E42E4FFF3B001613EC /* WelcomeScreen.swift */,
+				AB9350FB2E50C2D7002B722D /* OnboardingCompletedScreen.swift */,
 			);
-			path = Welcome;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AB9351092E50CE8E002B722D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AB93510B2E50CECE002B722D /* SettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AB93510D2E50D1CC002B722D /* Settings Button */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C35E02E4FFD2A001613EC /* SettingsButton.swift */,
+				AB93510E2E50D1E1002B722D /* Settings+Destination.swift */,
+			);
+			path = "Settings Button";
+			sourceTree = "<group>";
+		};
+		AB9351102E50D537002B722D /* ----- Tabs ----- */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "----- Tabs -----";
+			sourceTree = "<group>";
+		};
+		AB9351122E50D594002B722D /* ----- Screens ----- */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "----- Screens -----";
 			sourceTree = "<group>";
 		};
 		ABAE1C8D2E4F72D400CAA272 = {
@@ -152,12 +202,14 @@
 			isa = PBXGroup;
 			children = (
 				ABAE1CA92E4F7DCE00CAA272 /* App Content */,
-				AB5C35E32E4FFF1D001613EC /* Welcome */,
-				AB5C35D72E4FFAEB001613EC /* Profile */,
-				AB5C35D62E4FFAE5001613EC /* Chats */,
-				AB5C35D52E4FFAE0001613EC /* Explore */,
 				AB5C35CD2E4F8EB6001613EC /* Onboarding */,
 				AB5C35CE2E4F8EC0001613EC /* Tab Bar */,
+				AB9351102E50D537002B722D /* ----- Tabs ----- */,
+				AB5C35D62E4FFAE5001613EC /* Chats */,
+				AB5C35D52E4FFAE0001613EC /* Explore */,
+				AB5C35D72E4FFAEB001613EC /* Profile */,
+				AB9351122E50D594002B722D /* ----- Screens ----- */,
+				AB9351092E50CE8E002B722D /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -166,17 +218,10 @@
 			isa = PBXGroup;
 			children = (
 				ABAE1CAA2E4F7E0800CAA272 /* MainAppScreen.swift */,
-				ABAE1CAF2E4F841C00CAA272 /* Components */,
+				ABAE1CAD2E4F832600CAA272 /* AppViewBuilder.swift */,
+				AB9350F92E50BAE0002B722D /* AppState.swift */,
 			);
 			path = "App Content";
-			sourceTree = "<group>";
-		};
-		ABAE1CAF2E4F841C00CAA272 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				ABAE1CAD2E4F832600CAA272 /* AppViewBuilder.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +293,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		ABAE1CA72E4F78B500CAA272 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -271,16 +317,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB93510C2E50CECE002B722D /* SettingsScreen.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
+				AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */,
 				AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */,
 				AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */,
 				AB5C35D92E4FFBCE001613EC /* ExploreScreen.swift in Sources */,
 				AB5C35D02E4F8F21001613EC /* TabBarScreen.swift in Sources */,
+				AB9350FE2E50C34E002B722D /* PrimaryButton.swift in Sources */,
 				AB5C35DB2E4FFBED001613EC /* ChatsScreen.swift in Sources */,
+				AB9350FA2E50BAE0002B722D /* AppState.swift in Sources */,
 				ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */,
 				AB5C35D42E4FFA8D001613EC /* SystemImage.swift in Sources */,
 				ABAE1CAB2E4F7E0800CAA272 /* MainAppScreen.swift in Sources */,
+				AB9350FC2E50C2D7002B722D /* OnboardingCompletedScreen.swift in Sources */,
 				AB5C35DE2E4FFC13001613EC /* ProfileScreen.swift in Sources */,
+				AB9351062E50C8E9002B722D /* Onboarding+Destination.swift in Sources */,
+				AB9351082E50CA70002B722D /* NavigationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
