@@ -21,6 +21,9 @@
 		AB9351082E50CA70002B722D /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351072E50CA70002B722D /* NavigationManager.swift */; };
 		AB93510C2E50CECE002B722D /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93510B2E50CECE002B722D /* SettingsScreen.swift */; };
 		AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93510E2E50D1E1002B722D /* Settings+Destination.swift */; };
+		AB9351142E50E3C4002B722D /* ImageLoaderViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351132E50E3C4002B722D /* ImageLoaderViewBuilder.swift */; };
+		AB9351172E50E458002B722D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AB9351162E50E458002B722D /* SDWebImageSwiftUI */; };
+		AB9351192E50E987002B722D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351182E50E987002B722D /* Constants.swift */; };
 		ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */; };
 		ABAE1C9E2E4F72D700CAA272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */; };
 		ABAE1CA12E4F72D700CAA272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */; };
@@ -43,6 +46,8 @@
 		AB9351072E50CA70002B722D /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		AB93510B2E50CECE002B722D /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		AB93510E2E50D1E1002B722D /* Settings+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+Destination.swift"; sourceTree = "<group>"; };
+		AB9351132E50E3C4002B722D /* ImageLoaderViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewBuilder.swift; sourceTree = "<group>"; };
+		AB9351182E50E987002B722D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ABAE1C962E4F72D500CAA272 /* AIChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatBotApp.swift; sourceTree = "<group>"; };
 		ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9351172E50E458002B722D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +90,7 @@
 			children = (
 				AB5C35D32E4FFA8D001613EC /* SystemImage.swift */,
 				AB9351072E50CA70002B722D /* NavigationManager.swift */,
+				AB9351182E50E987002B722D /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 			children = (
 				AB93510D2E50D1CC002B722D /* Settings Button */,
 				AB9350FD2E50C34E002B722D /* PrimaryButton.swift */,
+				AB9351132E50E3C4002B722D /* ImageLoaderViewBuilder.swift */,
 			);
 			path = "Global Components";
 			sourceTree = "<group>";
@@ -241,6 +249,9 @@
 			dependencies = (
 			);
 			name = AIChatBot;
+			packageProductDependencies = (
+				AB9351162E50E458002B722D /* SDWebImageSwiftUI */,
+			);
 			productName = AIChatBot;
 			productReference = ABAE1C962E4F72D500CAA272 /* AIChatBot.app */;
 			productType = "com.apple.product-type.application";
@@ -269,6 +280,9 @@
 				Base,
 			);
 			mainGroup = ABAE1C8D2E4F72D400CAA272;
+			packageReferences = (
+				AB9351152E50E458002B722D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = ABAE1C972E4F72D500CAA272 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB93510C2E50CECE002B722D /* SettingsScreen.swift in Sources */,
+				AB9351192E50E987002B722D /* Constants.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
 				AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */,
 				AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */,
@@ -332,6 +347,7 @@
 				ABAE1CAB2E4F7E0800CAA272 /* MainAppScreen.swift in Sources */,
 				AB9350FC2E50C2D7002B722D /* OnboardingCompletedScreen.swift in Sources */,
 				AB5C35DE2E4FFC13001613EC /* ProfileScreen.swift in Sources */,
+				AB9351142E50E3C4002B722D /* ImageLoaderViewBuilder.swift in Sources */,
 				AB9351062E50C8E9002B722D /* Onboarding+Destination.swift in Sources */,
 				AB9351082E50CA70002B722D /* NavigationManager.swift in Sources */,
 			);
@@ -551,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB9351152E50E458002B722D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB9351162E50E458002B722D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB9351152E50E458002B722D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ABAE1C8E2E4F72D400CAA272 /* Project object */;
 }
