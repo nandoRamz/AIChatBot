@@ -28,6 +28,11 @@
 		AB9351202E520A6B002B722D /* OnboardingProfileColorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93511F2E520A6B002B722D /* OnboardingProfileColorScreen.swift */; };
 		AB9351222E521594002B722D /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351212E521594002B722D /* OnboardingManager.swift */; };
 		AB9351252E521F47002B722D /* FeatureAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351242E521F47002B722D /* FeatureAvatarCell.swift */; };
+		AB93512A2E522596002B722D /* DBAvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351292E522596002B722D /* DBAvatarModel.swift */; };
+		AB93512C2E526AC9002B722D /* AvatarDescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93512B2E526AC9002B722D /* AvatarDescriptionHelper.swift */; };
+		AB93512E2E526BD4002B722D /* AvatarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93512D2E526BD4002B722D /* AvatarType.swift */; };
+		AB9351302E526BE8002B722D /* AvatarAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93512F2E526BE8002B722D /* AvatarAction.swift */; };
+		AB9351322E526BFA002B722D /* AvatarLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351312E526BFA002B722D /* AvatarLocation.swift */; };
 		ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */; };
 		ABAE1C9E2E4F72D700CAA272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */; };
 		ABAE1CA12E4F72D700CAA272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */; };
@@ -56,6 +61,11 @@
 		AB93511F2E520A6B002B722D /* OnboardingProfileColorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProfileColorScreen.swift; sourceTree = "<group>"; };
 		AB9351212E521594002B722D /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		AB9351242E521F47002B722D /* FeatureAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAvatarCell.swift; sourceTree = "<group>"; };
+		AB9351292E522596002B722D /* DBAvatarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAvatarModel.swift; sourceTree = "<group>"; };
+		AB93512B2E526AC9002B722D /* AvatarDescriptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDescriptionHelper.swift; sourceTree = "<group>"; };
+		AB93512D2E526BD4002B722D /* AvatarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarType.swift; sourceTree = "<group>"; };
+		AB93512F2E526BE8002B722D /* AvatarAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarAction.swift; sourceTree = "<group>"; };
+		AB9351312E526BFA002B722D /* AvatarLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarLocation.swift; sourceTree = "<group>"; };
 		ABAE1C962E4F72D500CAA272 /* AIChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatBotApp.swift; sourceTree = "<group>"; };
 		ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,6 +199,34 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		AB9351262E522559002B722D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB9351272E522573002B722D /* Avatars */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AB9351272E522573002B722D /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				AB9351282E52257E002B722D /* Models */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
+		AB9351282E52257E002B722D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB9351292E522596002B722D /* DBAvatarModel.swift */,
+				AB93512B2E526AC9002B722D /* AvatarDescriptionHelper.swift */,
+				AB93512D2E526BD4002B722D /* AvatarType.swift */,
+				AB93512F2E526BE8002B722D /* AvatarAction.swift */,
+				AB9351312E526BFA002B722D /* AvatarLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ABAE1C8D2E4F72D400CAA272 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +246,7 @@
 		ABAE1C982E4F72D500CAA272 /* AIChatBot */ = {
 			isa = PBXGroup;
 			children = (
+				AB9351262E522559002B722D /* Services */,
 				ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */,
 				ABAE1CA82E4F7DAB00CAA272 /* Core */,
 				AB5C35DF2E4FFD12001613EC /* Global Components */,
@@ -356,17 +395,22 @@
 				AB9351252E521F47002B722D /* FeatureAvatarCell.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
 				AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */,
+				AB93512E2E526BD4002B722D /* AvatarType.swift in Sources */,
 				AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */,
+				AB93512C2E526AC9002B722D /* AvatarDescriptionHelper.swift in Sources */,
 				AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */,
 				AB9351222E521594002B722D /* OnboardingManager.swift in Sources */,
 				AB5C35D92E4FFBCE001613EC /* ExploreScreen.swift in Sources */,
 				AB5C35D02E4F8F21001613EC /* TabBarScreen.swift in Sources */,
 				AB9351202E520A6B002B722D /* OnboardingProfileColorScreen.swift in Sources */,
 				AB9350FE2E50C34E002B722D /* PrimaryButton.swift in Sources */,
+				AB93512A2E522596002B722D /* DBAvatarModel.swift in Sources */,
 				AB5C35DB2E4FFBED001613EC /* ChatsScreen.swift in Sources */,
 				AB9350FA2E50BAE0002B722D /* AppState.swift in Sources */,
 				ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */,
+				AB9351302E526BE8002B722D /* AvatarAction.swift in Sources */,
 				AB5C35D42E4FFA8D001613EC /* SystemImage.swift in Sources */,
+				AB9351322E526BFA002B722D /* AvatarLocation.swift in Sources */,
 				ABAE1CAB2E4F7E0800CAA272 /* MainAppScreen.swift in Sources */,
 				AB9350FC2E50C2D7002B722D /* OnboardingCompletedScreen.swift in Sources */,
 				AB5C35DE2E4FFC13001613EC /* ProfileScreen.swift in Sources */,

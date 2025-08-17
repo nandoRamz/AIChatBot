@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ExploreScreen: View {
+    let avatar = DBAvatarModel.mock
+    
     var body: some View {
         NavigationStack {
-            Text("Explore")
-                .navigationTitle("Explore")
+            FeatureAvatarCell(
+                title: avatar.name,
+                description: avatar.characterDescription,
+                imageUrl: avatar.imageUrl
+            )
+            .frame(height: 200)
+            .navigationTitle("Explore")
         }
     }
 }
