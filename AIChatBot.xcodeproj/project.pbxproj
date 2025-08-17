@@ -26,6 +26,8 @@
 		AB9351192E50E987002B722D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351182E50E987002B722D /* Constants.swift */; };
 		AB93511B2E514BED002B722D /* OnboardingIntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93511A2E514BED002B722D /* OnboardingIntroScreen.swift */; };
 		AB9351202E520A6B002B722D /* OnboardingProfileColorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93511F2E520A6B002B722D /* OnboardingProfileColorScreen.swift */; };
+		AB9351222E521594002B722D /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351212E521594002B722D /* OnboardingManager.swift */; };
+		AB9351252E521F47002B722D /* FeatureAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351242E521F47002B722D /* FeatureAvatarCell.swift */; };
 		ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */; };
 		ABAE1C9E2E4F72D700CAA272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */; };
 		ABAE1CA12E4F72D700CAA272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		AB9351182E50E987002B722D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB93511A2E514BED002B722D /* OnboardingIntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroScreen.swift; sourceTree = "<group>"; };
 		AB93511F2E520A6B002B722D /* OnboardingProfileColorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProfileColorScreen.swift; sourceTree = "<group>"; };
+		AB9351212E521594002B722D /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		AB9351242E521F47002B722D /* FeatureAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAvatarCell.swift; sourceTree = "<group>"; };
 		ABAE1C962E4F72D500CAA272 /* AIChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatBotApp.swift; sourceTree = "<group>"; };
 		ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		AB5C35CD2E4F8EB6001613EC /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				AB9351212E521594002B722D /* OnboardingManager.swift */,
 				AB9351052E50C8E9002B722D /* Onboarding+Destination.swift */,
 				AB9351022E50C7EA002B722D /* Screens */,
 			);
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				AB5C35D82E4FFBCE001613EC /* ExploreScreen.swift */,
+				AB9351232E521ECF002B722D /* Components */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -138,8 +144,8 @@
 			children = (
 				AB5C35E42E4FFF3B001613EC /* WelcomeScreen.swift */,
 				AB93511A2E514BED002B722D /* OnboardingIntroScreen.swift */,
-				AB9350FB2E50C2D7002B722D /* OnboardingCompletedScreen.swift */,
 				AB93511F2E520A6B002B722D /* OnboardingProfileColorScreen.swift */,
+				AB9350FB2E50C2D7002B722D /* OnboardingCompletedScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -173,6 +179,14 @@
 			children = (
 			);
 			path = "----- Screens -----";
+			sourceTree = "<group>";
+		};
+		AB9351232E521ECF002B722D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AB9351242E521F47002B722D /* FeatureAvatarCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		ABAE1C8D2E4F72D400CAA272 = {
@@ -339,10 +353,12 @@
 			files = (
 				AB93510C2E50CECE002B722D /* SettingsScreen.swift in Sources */,
 				AB9351192E50E987002B722D /* Constants.swift in Sources */,
+				AB9351252E521F47002B722D /* FeatureAvatarCell.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
 				AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */,
 				AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */,
 				AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */,
+				AB9351222E521594002B722D /* OnboardingManager.swift in Sources */,
 				AB5C35D92E4FFBCE001613EC /* ExploreScreen.swift in Sources */,
 				AB5C35D02E4F8F21001613EC /* TabBarScreen.swift in Sources */,
 				AB9351202E520A6B002B722D /* OnboardingProfileColorScreen.swift in Sources */,

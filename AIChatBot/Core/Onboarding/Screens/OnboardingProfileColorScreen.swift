@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct OnboardingProfileColorScreen: View {
-    @State private var selectedColor: Color?
-    
     private let colors: [Color] = [.red, .green, .orange, .blue, .mint, .purple, .cyan, .teal, .indigo]
     
     var navManager: NavigationManager
+    var manager: OnboardingManager
     
     var body: some View {
         ScrollView {
@@ -30,7 +29,7 @@ struct OnboardingProfileColorScreen: View {
             alignment: .center,
             content: {
                 ZStack {
-                    if let _ = selectedColor {
+                    if manager.profileColor != nil {
                         continueButton
                             .transition(.move(edge: .bottom))
                     }
@@ -39,7 +38,7 @@ struct OnboardingProfileColorScreen: View {
             }
         )
         .navigationTitle("Select a profile color")
-        .animation(.smooth, value: selectedColor)
+        .animation(.smooth, value: manager.profileColor)
     }
 }
 
@@ -53,7 +52,7 @@ extension OnboardingProfileColorScreen {
                 .overlay {
                     color
                         .clipShape(.circle)
-                        .padding(selectedColor == color ? 8 : 0)
+                        .padding(manager.profileColor == color ? 8 : 0)
                 }
                 .onTapGesture { onColorPress(color) }
         }
@@ -62,6 +61,7 @@ extension OnboardingProfileColorScreen {
     private var continueButton: some View {
         PrimaryButton(
             title: "Continue",
+            backgroundColor: manager.profileColor,
             action: { onContinuePress() }
         )
     }
@@ -71,7 +71,7 @@ extension OnboardingProfileColorScreen {
 /// Actions
 extension OnboardingProfileColorScreen {
     private func onColorPress(_ color: Color) {
-        selectedColor = color
+        manager.profileColor = color
     }
     
     private func onContinuePress() {
@@ -81,6 +81,6 @@ extension OnboardingProfileColorScreen {
 
 #Preview {
     NavigationStack {
-        OnboardingProfileColorScreen(navManager: NavigationManager())
+        OnboardingProfileColorScreen(navManager: NavigationManager(), manager: OnboardingManager())
     }
 }

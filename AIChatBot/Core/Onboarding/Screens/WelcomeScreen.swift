@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WelcomeScreen: View {
     @State private var navManager = NavigationManager()
+    @State private var onboardingManager = OnboardingManager()
     @State private var imageUrl = Constants.randomImageUrl
     
     var body: some View {
@@ -28,7 +29,7 @@ struct WelcomeScreen: View {
                 .padding(.horizontal)
                 .padding(.bottom)
             }
-            .onboardingDestinations(with: navManager)
+            .onboardingDestinations(with: navManager, manager: onboardingManager)
         }
     }
 }

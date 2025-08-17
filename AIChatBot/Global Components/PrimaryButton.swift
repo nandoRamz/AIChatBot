@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PrimaryButton: View {
     var title: String
+    var backgroundColor: Color?
     var action: () -> Void
     
     var body: some View {
@@ -25,7 +26,7 @@ extension PrimaryButton {
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 44)
-            .background(Color.accent)
+            .background(backgroundColor ?? .accent)
             .clipShape(.rect(cornerRadius: 15))
     }
 }

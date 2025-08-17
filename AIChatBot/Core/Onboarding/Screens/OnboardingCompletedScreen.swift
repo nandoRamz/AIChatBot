@@ -10,26 +10,58 @@ import SwiftUI
 struct OnboardingCompletedScreen: View {
     @Environment(AppState.self) private var appState
     
+    var manager: OnboardingManager
+    
     var body: some View {
         VStack {
-            Text("Onboarding Completed!!")
-                .frame(maxHeight: .infinity)
+            VStack(alignment: .leading, spacing: 16) {
+                titleText
+                descriptionText
+            }
+            .frame(maxHeight: .infinity)
             
-            PrimaryButton(title: "Finished", action: { onFinishedPress() })
+            finishButton
         }
         .padding(.horizontal)
+    }
+}
+
+// MARK: - Views
+/// Views
+extension OnboardingCompletedScreen {
+    private var titleText: some View {
+        Text("Setup Complete!")
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .foregroundStyle(manager.profileColor ?? .accent)
+    }
+    
+    private var descriptionText: some View {
+        Text("We just need you to confirm and you're ready to start chattting.")
+            .font(.title3)
+            .fontWeight(.semibold)
+            .foregroundStyle(.secondary)
+    }
+    
+    private var finishButton: some View {
+        PrimaryButton(
+            title: "Finish",
+            backgroundColor: manager.profileColor,
+            action: { onFinishPress() }
+        )
+        .padding(.vertical)
     }
 }
 
 // MARK: - Actions
 /// Actions
 extension OnboardingCompletedScreen {
-    private func onFinishedPress() {
+    private func onFinishPress() {
         appState.isShowingTabBar = true
     }
 }
 
 #Preview {
-    OnboardingCompletedScreen()
+    OnboardingCompletedScreen(manager: OnboardingManager())
         .environment(AppState())
 }
