@@ -28,7 +28,7 @@ struct WelcomeScreen: View {
                 .padding(.horizontal)
                 .padding(.bottom)
             }
-            .onboardingDestinations()
+            .onboardingDestinations(with: navManager)
         }
     }
 }
@@ -75,7 +75,7 @@ extension WelcomeScreen {
 /// Actions
 extension WelcomeScreen {
     private func onGetStartedPress() {
-        navManager.path.append(OnboardingDestination.completed)
+        navManager.path.append(OnboardingDestination.intro)
     }
 }
 
