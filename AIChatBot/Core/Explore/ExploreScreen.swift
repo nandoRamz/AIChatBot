@@ -15,6 +15,7 @@ struct ExploreScreen: View {
         NavigationStack {
             ScrollView {
                 featureAvatarsSection
+                avatarCategories
             }
             .navigationTitle("Explore")
         }
@@ -32,6 +33,20 @@ extension ExploreScreen {
                     title: avatar.name,
                     description: avatar.characterDescription,
                     imageUrl: avatar.imageUrl
+                )
+            }
+        )
+        .contentMargins(.horizontal, 16)
+    }
+    
+    private var avatarCategories: some View { 
+        CarouselViewBuilder(
+            items: AvatarType.allCases,
+            displayCount: 2,
+            content: { category in
+                AvatarCategoryCell(
+                    title: category.rawValue.capitalized,
+                    imageUrl: Constants.randomImageUrl
                 )
             }
         )

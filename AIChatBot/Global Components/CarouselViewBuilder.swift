@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CarouselViewBuilder<Content: View, T: Hashable>: View {
     var items: [T]
+    var displayCount: Int = 1
     var content: (T) -> Content
     
     var body: some View {
@@ -16,7 +17,7 @@ struct CarouselViewBuilder<Content: View, T: Hashable>: View {
             LazyHStack(spacing: 8) {
                 ForEach(items, id: \.self) { item in
                     content(item)
-                    .containerRelativeFrame(.horizontal, count: 1, spacing: 8)
+                    .containerRelativeFrame(.horizontal, count: displayCount, spacing: 8)
                 }
             }
         }

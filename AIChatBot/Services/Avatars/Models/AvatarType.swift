@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AvatarType: String, Codable {
+enum AvatarType: String, Codable, CaseIterable, Hashable {
     case man
     case woman
     case alien
