@@ -36,6 +36,8 @@
 		AB9351372E52887C002B722D /* CarouselViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351362E52887C002B722D /* CarouselViewBuilder.swift */; };
 		AB93513B2E536ECD002B722D /* AvatarCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93513A2E536ECD002B722D /* AvatarCategoryCell.swift */; };
 		AB93513E2E5371E9002B722D /* GradientBackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93513D2E5371E9002B722D /* GradientBackgroundStyle.swift */; };
+		AB9351422E5380FC002B722D /* PopularAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351412E5380FC002B722D /* PopularAvatarCell.swift */; };
+		AB9351442E538402002B722D /* ListViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9351432E538402002B722D /* ListViewBuilder.swift */; };
 		ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */; };
 		ABAE1C9E2E4F72D700CAA272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */; };
 		ABAE1CA12E4F72D700CAA272 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE1CA02E4F72D700CAA272 /* Preview Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		AB9351362E52887C002B722D /* CarouselViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewBuilder.swift; sourceTree = "<group>"; };
 		AB93513A2E536ECD002B722D /* AvatarCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCategoryCell.swift; sourceTree = "<group>"; };
 		AB93513D2E5371E9002B722D /* GradientBackgroundStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundStyle.swift; sourceTree = "<group>"; };
+		AB9351412E5380FC002B722D /* PopularAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularAvatarCell.swift; sourceTree = "<group>"; };
+		AB9351432E538402002B722D /* ListViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewBuilder.swift; sourceTree = "<group>"; };
 		ABAE1C962E4F72D500CAA272 /* AIChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE1C992E4F72D500CAA272 /* AIChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatBotApp.swift; sourceTree = "<group>"; };
 		ABAE1C9D2E4F72D700CAA272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				AB9350FD2E50C34E002B722D /* PrimaryButton.swift */,
 				AB9351132E50E3C4002B722D /* ImageLoaderViewBuilder.swift */,
 				AB9351362E52887C002B722D /* CarouselViewBuilder.swift */,
+				AB9351432E538402002B722D /* ListViewBuilder.swift */,
 			);
 			path = "Global Components";
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			children = (
 				AB9351242E521F47002B722D /* FeatureAvatarCell.swift */,
 				AB93513A2E536ECD002B722D /* AvatarCategoryCell.swift */,
+				AB9351412E5380FC002B722D /* PopularAvatarCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -427,9 +433,11 @@
 				AB9350FA2E50BAE0002B722D /* AppState.swift in Sources */,
 				ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */,
 				AB9351302E526BE8002B722D /* AvatarAction.swift in Sources */,
+				AB9351422E5380FC002B722D /* PopularAvatarCell.swift in Sources */,
 				AB5C35D42E4FFA8D001613EC /* SystemImage.swift in Sources */,
 				AB9351322E526BFA002B722D /* AvatarLocation.swift in Sources */,
 				AB93513E2E5371E9002B722D /* GradientBackgroundStyle.swift in Sources */,
+				AB9351442E538402002B722D /* ListViewBuilder.swift in Sources */,
 				AB9351372E52887C002B722D /* CarouselViewBuilder.swift in Sources */,
 				ABAE1CAB2E4F7E0800CAA272 /* MainAppScreen.swift in Sources */,
 				AB9350FC2E50C2D7002B722D /* OnboardingCompletedScreen.swift in Sources */,

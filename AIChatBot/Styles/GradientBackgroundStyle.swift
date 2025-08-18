@@ -33,7 +33,6 @@ extension GradientBackgroundStyle {
     }
 }
 
-
 extension View {
     func gradientBackgroundStyle(startPoint: UnitPoint = .bottom, endPoint: UnitPoint = .top) -> some View {
         self

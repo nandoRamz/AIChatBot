@@ -17,11 +17,11 @@ struct CarouselViewBuilder<Content: View, T: Hashable>: View {
             LazyHStack(spacing: 8) {
                 ForEach(items, id: \.self) { item in
                     content(item)
-                    .containerRelativeFrame(.horizontal, count: displayCount, spacing: 8)
+                        .containerRelativeFrame(.horizontal, count: displayCount, spacing: 8)
                 }
             }
         }
-        .frame(height: 200)
+        
         .scrollIndicators(.hidden)
         .scrollTargetLayout()
         .scrollTargetBehavior(.viewAligned)
