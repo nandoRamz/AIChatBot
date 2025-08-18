@@ -9,7 +9,7 @@ import Foundation
 
 typealias DBAvatarModelKeys = DBAvatarModel.CodingKeys
 
-struct DBAvatarModel: Codable {
+struct DBAvatarModel: Codable, Hashable {
     var id: String
     var creatorId: String
     var name: String

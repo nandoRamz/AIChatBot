@@ -44,7 +44,7 @@ extension FeatureAvatarCell {
                 .black.opacity(0.8),
                 .black.opacity(0.5),
                 .black.opacity(0.3),
-                .black.opacity(0.0),
+                .black.opacity(0.0)
             ],
             startPoint: .bottom,
             endPoint: .top
