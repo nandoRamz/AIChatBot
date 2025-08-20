@@ -47,6 +47,11 @@
 		ABD918382E54BB6200A5B20F /* DBChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918372E54BB6200A5B20F /* DBChatModel.swift */; };
 		ABD9183A2E54BC1500A5B20F /* DBMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918392E54BC1500A5B20F /* DBMessageModel.swift */; };
 		ABD9183D2E54C01E00A5B20F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9183C2E54C01E00A5B20F /* Date+Extension.swift */; };
+		ABD918402E55F94600A5B20F /* ListFormSectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9183F2E55F94600A5B20F /* ListFormSectionStyle.swift */; };
+		ABD918422E55F99900A5B20F /* MyAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918412E55F99900A5B20F /* MyAvatarCell.swift */; };
+		ABD918452E55FAE900A5B20F /* NewAvatar+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918442E55FAE900A5B20F /* NewAvatar+Destination.swift */; };
+		ABD918492E56000200A5B20F /* DBUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918482E56000200A5B20F /* DBUserModel.swift */; };
+		ABD9184B2E56022A00A5B20F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9184A2E56022A00A5B20F /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +95,11 @@
 		ABD918372E54BB6200A5B20F /* DBChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBChatModel.swift; sourceTree = "<group>"; };
 		ABD918392E54BC1500A5B20F /* DBMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMessageModel.swift; sourceTree = "<group>"; };
 		ABD9183C2E54C01E00A5B20F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		ABD9183F2E55F94600A5B20F /* ListFormSectionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFormSectionStyle.swift; sourceTree = "<group>"; };
+		ABD918412E55F99900A5B20F /* MyAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarCell.swift; sourceTree = "<group>"; };
+		ABD918442E55FAE900A5B20F /* NewAvatar+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAvatar+Destination.swift"; sourceTree = "<group>"; };
+		ABD918482E56000200A5B20F /* DBUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUserModel.swift; sourceTree = "<group>"; };
+		ABD9184A2E56022A00A5B20F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				AB5C35DD2E4FFC13001613EC /* ProfileScreen.swift */,
+				ABD9183E2E55F8F000A5B20F /* Components */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 		AB5C35DF2E4FFD12001613EC /* Global Components */ = {
 			isa = PBXGroup;
 			children = (
+				ABD918432E55FACB00A5B20F /* New Avatar Button */,
 				AB93510D2E50D1CC002B722D /* Settings Button */,
 				AB9350FD2E50C34E002B722D /* PrimaryButton.swift */,
 				AB9351132E50E3C4002B722D /* ImageLoaderViewBuilder.swift */,
@@ -225,6 +237,7 @@
 		AB9351262E522559002B722D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ABD918462E55FFE500A5B20F /* Users */,
 				ABD918352E54BA9B00A5B20F /* Chats */,
 				AB9351272E522573002B722D /* Avatars */,
 			);
@@ -255,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				AB93513D2E5371E9002B722D /* GradientBackgroundStyle.swift */,
+				ABD9183F2E55F94600A5B20F /* ListFormSectionStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -354,8 +368,41 @@
 			isa = PBXGroup;
 			children = (
 				ABD9183C2E54C01E00A5B20F /* Date+Extension.swift */,
+				ABD9184A2E56022A00A5B20F /* Color+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABD9183E2E55F8F000A5B20F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ABD918412E55F99900A5B20F /* MyAvatarCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ABD918432E55FACB00A5B20F /* New Avatar Button */ = {
+			isa = PBXGroup;
+			children = (
+				ABD918442E55FAE900A5B20F /* NewAvatar+Destination.swift */,
+			);
+			path = "New Avatar Button";
+			sourceTree = "<group>";
+		};
+		ABD918462E55FFE500A5B20F /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				ABD918472E55FFF400A5B20F /* Models */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		ABD918472E55FFF400A5B20F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABD918482E56000200A5B20F /* DBUserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,14 +505,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB93510C2E50CECE002B722D /* SettingsScreen.swift in Sources */,
+				ABD9184B2E56022A00A5B20F /* Color+Extension.swift in Sources */,
 				AB9351192E50E987002B722D /* Constants.swift in Sources */,
 				AB9351252E521F47002B722D /* FeatureAvatarCell.swift in Sources */,
 				ABD918342E54B8B900A5B20F /* ChatCell.swift in Sources */,
+				ABD918452E55FAE900A5B20F /* NewAvatar+Destination.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
 				ABD918382E54BB6200A5B20F /* DBChatModel.swift in Sources */,
 				AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */,
+				ABD918422E55F99900A5B20F /* MyAvatarCell.swift in Sources */,
 				AB93512E2E526BD4002B722D /* AvatarType.swift in Sources */,
 				AB5C35E12E4FFD2A001613EC /* SettingsButton.swift in Sources */,
+				ABD918492E56000200A5B20F /* DBUserModel.swift in Sources */,
 				AB93512C2E526AC9002B722D /* AvatarDescriptionHelper.swift in Sources */,
 				AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */,
 				ABD9183A2E54BC1500A5B20F /* DBMessageModel.swift in Sources */,
@@ -475,6 +526,7 @@
 				AB9351202E520A6B002B722D /* OnboardingProfileColorScreen.swift in Sources */,
 				AB9350FE2E50C34E002B722D /* PrimaryButton.swift in Sources */,
 				AB93513B2E536ECD002B722D /* AvatarCategoryCell.swift in Sources */,
+				ABD918402E55F94600A5B20F /* ListFormSectionStyle.swift in Sources */,
 				ABD9183D2E54C01E00A5B20F /* Date+Extension.swift in Sources */,
 				AB93512A2E522596002B722D /* DBAvatarModel.swift in Sources */,
 				AB5C35DB2E4FFBED001613EC /* ChatsScreen.swift in Sources */,

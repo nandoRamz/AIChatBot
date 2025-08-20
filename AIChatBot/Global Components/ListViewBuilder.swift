@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListViewBuilder<Content: View, T: Hashable>: View {
     var items: [T]
+    var dividerLeadingPadding: CGFloat = 75
     var content: (T) -> Content
     
     var body: some View {
@@ -30,7 +31,7 @@ struct ListViewBuilder<Content: View, T: Hashable>: View {
             Divider()
                 .frame(maxHeight: .infinity, alignment: .bottom)
                 .opacity(item == items.last ? 0 : 1)
-                .padding(.leading, 75 + 16 + 8)
+                .padding(.leading, dividerLeadingPadding + 16 + 8)
         }
     }
 }
