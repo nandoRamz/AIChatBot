@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct ChatCell: View {
+    @State private var avatar: DBAvatarModel?
+    @State private var lastMessage: DBMessageModel?
+    @State private var didLoadAvatar: Bool = false
+    @State private var didLoadLastMessage: Bool = false
+    
+    var chat: DBChatModel
+    var getAvatar: () async -> DBAvatarModel
+    var getLastMessage: () async -> DBMessageModel
+    
     var body: some View {
         HStack(spacing: 8) {
             image
             message
             newBadgeIcon
+        }
+        .task {
+            if didLoadAvatar { return }
+            avatar = await getAvatar()
+            didLoadAvatar = true
+        }
+        .task { 
+            if didLoadLastMessage { return }
+            lastMessage = await getLastMessage()
+            didLoadLastMessage = true
         }
     }
 }
@@ -21,16 +40,16 @@ struct ChatCell: View {
 /// Views
 extension ChatCell {
     private var image: some View {
-        ImageLoaderViewBuilder(urlString: Constants.randomImageUrl)
+        ImageLoaderViewBuilder(urlString: avatar?.imageUrl)
             .frame(width: 50, height: 50)
             .clipShape(.circle)
     }
     
     private var message: some View {
         VStack(alignment: .leading) {
-            Text("Alpha")
+            Text(avatar?.name ?? "Unavailable")
                 .font(.headline)
-            Text("Hey, how are you?")
+            Text(lastMessage?.text ?? "")
                 .foregroundStyle(.secondary)
                 .lineLimit(1)
         }
@@ -50,6 +69,10 @@ extension ChatCell {
 }
 
 #Preview {
-    ChatCell()
-        .padding(.horizontal)
+    ChatCell(
+        chat: .mock,
+        getAvatar: { .mock },
+        getLastMessage: { .mock }
+    )
+    .padding(.horizontal)
 }

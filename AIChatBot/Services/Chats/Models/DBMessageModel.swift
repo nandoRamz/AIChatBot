@@ -30,9 +30,9 @@ struct DBMessageModel: Codable {
 // MARK: - Mocks
 /// Mocks
 extension DBMessageModel {
-    var mock: DBMessageModel { mocks[0] }
+    static var mock: DBMessageModel { mocks[0] }
     
-    var mocks: [DBMessageModel] {
+    static var mocks: [DBMessageModel] {
         [
             .init(
                 id: "msg_001",

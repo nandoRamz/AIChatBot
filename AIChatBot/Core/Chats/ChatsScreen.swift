@@ -17,13 +17,29 @@ struct ChatsScreen: View {
                 ListViewBuilder(
                     items: chats,
                     content: { chat in
-                        ChatCell()
+                        ChatCell(
+                            chat: chat,
+                            getAvatar: { await fetchAvatar(for: chat) },
+                            getLastMessage: { await fetchLastMessage(for: chat) }
+                        )
                     }
                 )
                 .padding(.horizontal)
             }
             .navigationTitle("Chats")
         }
+    }
+}
+
+// MARK: - Methods
+/// Methods
+extension ChatsScreen {
+    private func fetchAvatar(for chat: DBChatModel) async -> DBAvatarModel {
+        return .mock
+    }
+    
+    private func fetchLastMessage(for chat: DBChatModel) async -> DBMessageModel {
+        return .mock
     }
 }
 
