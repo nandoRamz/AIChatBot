@@ -31,7 +31,7 @@ struct ListViewBuilder<Content: View, T: Hashable>: View {
             Divider()
                 .frame(maxHeight: .infinity, alignment: .bottom)
                 .opacity(item == items.last ? 0 : 1)
-                .padding(.leading, dividerLeadingPadding + 16 + 8)
+                .padding(.leading, dividerLeadingPadding)
         }
     }
 }
@@ -39,6 +39,7 @@ struct ListViewBuilder<Content: View, T: Hashable>: View {
 #Preview {
     ListViewBuilder(
         items: DBAvatarModel.mocks,
+        dividerLeadingPadding: 50 + 16 + 8,
         content: { avatar in
             PopularAvatarCell(avatar: avatar)
         }

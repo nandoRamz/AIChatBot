@@ -52,6 +52,10 @@
 		ABD918452E55FAE900A5B20F /* NewAvatar+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918442E55FAE900A5B20F /* NewAvatar+Destination.swift */; };
 		ABD918492E56000200A5B20F /* DBUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918482E56000200A5B20F /* DBUserModel.swift */; };
 		ABD9184B2E56022A00A5B20F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9184A2E56022A00A5B20F /* Color+Extension.swift */; };
+		ABD9184E2E565A3200A5B20F /* AccountSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9184D2E565A3200A5B20F /* AccountSetting.swift */; };
+		ABD918502E565A4500A5B20F /* ApplicationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9184F2E565A4500A5B20F /* ApplicationSetting.swift */; };
+		ABD918522E565A4E00A5B20F /* LoginSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918512E565A4E00A5B20F /* LoginSetting.swift */; };
+		ABD918552E565AFB00A5B20F /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918542E565AFB00A5B20F /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +104,10 @@
 		ABD918442E55FAE900A5B20F /* NewAvatar+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewAvatar+Destination.swift"; sourceTree = "<group>"; };
 		ABD918482E56000200A5B20F /* DBUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUserModel.swift; sourceTree = "<group>"; };
 		ABD9184A2E56022A00A5B20F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		ABD9184D2E565A3200A5B20F /* AccountSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetting.swift; sourceTree = "<group>"; };
+		ABD9184F2E565A4500A5B20F /* ApplicationSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSetting.swift; sourceTree = "<group>"; };
+		ABD918512E565A4E00A5B20F /* LoginSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSetting.swift; sourceTree = "<group>"; };
+		ABD918542E565AFB00A5B20F /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				AB93510B2E50CECE002B722D /* SettingsScreen.swift */,
+				ABD9184C2E565A1D00A5B20F /* Models */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -292,6 +301,7 @@
 		ABAE1C982E4F72D500CAA272 /* AIChatBot */ = {
 			isa = PBXGroup;
 			children = (
+				ABD918532E565AE800A5B20F /* Protocols */,
 				ABD9183B2E54C01000A5B20F /* Extensions */,
 				AB93513C2E5371BB002B722D /* Styles */,
 				AB9351262E522559002B722D /* Services */,
@@ -405,6 +415,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		ABD9184C2E565A1D00A5B20F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABD9184D2E565A3200A5B20F /* AccountSetting.swift */,
+				ABD9184F2E565A4500A5B20F /* ApplicationSetting.swift */,
+				ABD918512E565A4E00A5B20F /* LoginSetting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABD918532E565AE800A5B20F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ABD918542E565AFB00A5B20F /* Setting.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -510,6 +538,7 @@
 				AB9351252E521F47002B722D /* FeatureAvatarCell.swift in Sources */,
 				ABD918342E54B8B900A5B20F /* ChatCell.swift in Sources */,
 				ABD918452E55FAE900A5B20F /* NewAvatar+Destination.swift in Sources */,
+				ABD918552E565AFB00A5B20F /* Setting.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
 				ABD918382E54BB6200A5B20F /* DBChatModel.swift in Sources */,
 				AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */,
@@ -519,6 +548,7 @@
 				ABD918492E56000200A5B20F /* DBUserModel.swift in Sources */,
 				AB93512C2E526AC9002B722D /* AvatarDescriptionHelper.swift in Sources */,
 				AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */,
+				ABD9184E2E565A3200A5B20F /* AccountSetting.swift in Sources */,
 				ABD9183A2E54BC1500A5B20F /* DBMessageModel.swift in Sources */,
 				AB9351222E521594002B722D /* OnboardingManager.swift in Sources */,
 				AB5C35D92E4FFBCE001613EC /* ExploreScreen.swift in Sources */,
@@ -528,9 +558,11 @@
 				AB93513B2E536ECD002B722D /* AvatarCategoryCell.swift in Sources */,
 				ABD918402E55F94600A5B20F /* ListFormSectionStyle.swift in Sources */,
 				ABD9183D2E54C01E00A5B20F /* Date+Extension.swift in Sources */,
+				ABD918502E565A4500A5B20F /* ApplicationSetting.swift in Sources */,
 				AB93512A2E522596002B722D /* DBAvatarModel.swift in Sources */,
 				AB5C35DB2E4FFBED001613EC /* ChatsScreen.swift in Sources */,
 				AB9350FA2E50BAE0002B722D /* AppState.swift in Sources */,
+				ABD918522E565A4E00A5B20F /* LoginSetting.swift in Sources */,
 				ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */,
 				AB9351302E526BE8002B722D /* AvatarAction.swift in Sources */,
 				AB9351422E5380FC002B722D /* PopularAvatarCell.swift in Sources */,

@@ -13,7 +13,7 @@ struct PopularAvatarCell: View {
     var body: some View {
         HStack(alignment: .top, spacing: 8) {
             ImageLoaderViewBuilder(urlString: Constants.randomImageUrl)
-                .frame(width: 75, height: 75)
+                .frame(width: 50, height: 50)
                 .clipShape(.rect(cornerRadius: 8))
             
             VStack(alignment: .leading, spacing: 4) {
@@ -23,7 +23,7 @@ struct PopularAvatarCell: View {
             }
             .padding(.vertical, 4)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .frame(maxHeight: 75)
+            .frame(maxHeight: 50)
         }
     }
 }
