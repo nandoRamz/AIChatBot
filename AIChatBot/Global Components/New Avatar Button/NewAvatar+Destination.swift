@@ -18,7 +18,7 @@ extension View {
         self
             .navigationDestination(for: NewAvatarDestination.self) { value in
                 switch value {
-                case .root: Color.red
+                case .root: CreateNewAvatarScreen()
                 }
             }
     }

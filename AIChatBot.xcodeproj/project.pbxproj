@@ -56,6 +56,10 @@
 		ABD918502E565A4500A5B20F /* ApplicationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9184F2E565A4500A5B20F /* ApplicationSetting.swift */; };
 		ABD918522E565A4E00A5B20F /* LoginSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918512E565A4E00A5B20F /* LoginSetting.swift */; };
 		ABD918552E565AFB00A5B20F /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918542E565AFB00A5B20F /* Setting.swift */; };
+		ABD9185A2E56687600A5B20F /* CreateNewAvatarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918592E56687600A5B20F /* CreateNewAvatarScreen.swift */; };
+		ABD9185C2E566D7100A5B20F /* FormPickerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9185B2E566D7100A5B20F /* FormPickerViewBuilder.swift */; };
+		ABD9185E2E566DF300A5B20F /* PickerSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9185D2E566DF300A5B20F /* PickerSelectable.swift */; };
+		ABD918602E56780E00A5B20F /* SingleFormRowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9185F2E56780E00A5B20F /* SingleFormRowStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +112,10 @@
 		ABD9184F2E565A4500A5B20F /* ApplicationSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSetting.swift; sourceTree = "<group>"; };
 		ABD918512E565A4E00A5B20F /* LoginSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSetting.swift; sourceTree = "<group>"; };
 		ABD918542E565AFB00A5B20F /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		ABD918592E56687600A5B20F /* CreateNewAvatarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAvatarScreen.swift; sourceTree = "<group>"; };
+		ABD9185B2E566D7100A5B20F /* FormPickerViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPickerViewBuilder.swift; sourceTree = "<group>"; };
+		ABD9185D2E566DF300A5B20F /* PickerSelectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSelectable.swift; sourceTree = "<group>"; };
+		ABD9185F2E56780E00A5B20F /* SingleFormRowStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFormRowStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,7 @@
 				AB9351132E50E3C4002B722D /* ImageLoaderViewBuilder.swift */,
 				AB9351362E52887C002B722D /* CarouselViewBuilder.swift */,
 				AB9351432E538402002B722D /* ListViewBuilder.swift */,
+				ABD9185B2E566D7100A5B20F /* FormPickerViewBuilder.swift */,
 			);
 			path = "Global Components";
 			sourceTree = "<group>";
@@ -278,6 +287,7 @@
 			children = (
 				AB93513D2E5371E9002B722D /* GradientBackgroundStyle.swift */,
 				ABD9183F2E55F94600A5B20F /* ListFormSectionStyle.swift */,
+				ABD9185F2E56780E00A5B20F /* SingleFormRowStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -334,6 +344,7 @@
 				AB5C35D52E4FFAE0001613EC /* Explore */,
 				AB5C35D72E4FFAEB001613EC /* Profile */,
 				AB9351122E50D594002B722D /* ----- Screens ----- */,
+				ABD918562E56683E00A5B20F /* Create Avatar */,
 				AB9351092E50CE8E002B722D /* Settings */,
 			);
 			path = Core;
@@ -429,8 +440,17 @@
 			isa = PBXGroup;
 			children = (
 				ABD918542E565AFB00A5B20F /* Setting.swift */,
+				ABD9185D2E566DF300A5B20F /* PickerSelectable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ABD918562E56683E00A5B20F /* Create Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				ABD918592E56687600A5B20F /* CreateNewAvatarScreen.swift */,
+			);
+			path = "Create Avatar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,6 +561,7 @@
 				ABD918552E565AFB00A5B20F /* Setting.swift in Sources */,
 				ABAE1C9A2E4F72D500CAA272 /* AIChatBotApp.swift in Sources */,
 				ABD918382E54BB6200A5B20F /* DBChatModel.swift in Sources */,
+				ABD9185E2E566DF300A5B20F /* PickerSelectable.swift in Sources */,
 				AB93510F2E50D1E1002B722D /* Settings+Destination.swift in Sources */,
 				ABD918422E55F99900A5B20F /* MyAvatarCell.swift in Sources */,
 				AB93512E2E526BD4002B722D /* AvatarType.swift in Sources */,
@@ -555,8 +576,10 @@
 				AB5C35D02E4F8F21001613EC /* TabBarScreen.swift in Sources */,
 				AB9351202E520A6B002B722D /* OnboardingProfileColorScreen.swift in Sources */,
 				AB9350FE2E50C34E002B722D /* PrimaryButton.swift in Sources */,
+				ABD9185A2E56687600A5B20F /* CreateNewAvatarScreen.swift in Sources */,
 				AB93513B2E536ECD002B722D /* AvatarCategoryCell.swift in Sources */,
 				ABD918402E55F94600A5B20F /* ListFormSectionStyle.swift in Sources */,
+				ABD9185C2E566D7100A5B20F /* FormPickerViewBuilder.swift in Sources */,
 				ABD9183D2E54C01E00A5B20F /* Date+Extension.swift in Sources */,
 				ABD918502E565A4500A5B20F /* ApplicationSetting.swift in Sources */,
 				AB93512A2E522596002B722D /* DBAvatarModel.swift in Sources */,
@@ -565,6 +588,7 @@
 				ABD918522E565A4E00A5B20F /* LoginSetting.swift in Sources */,
 				ABAE1CAE2E4F832600CAA272 /* AppViewBuilder.swift in Sources */,
 				AB9351302E526BE8002B722D /* AvatarAction.swift in Sources */,
+				ABD918602E56780E00A5B20F /* SingleFormRowStyle.swift in Sources */,
 				AB9351422E5380FC002B722D /* PopularAvatarCell.swift in Sources */,
 				AB5C35D42E4FFA8D001613EC /* SystemImage.swift in Sources */,
 				AB9351322E526BFA002B722D /* AvatarLocation.swift in Sources */,

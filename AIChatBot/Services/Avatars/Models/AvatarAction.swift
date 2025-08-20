@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AvatarAction: String, Codable {
+enum AvatarAction: String, Codable, CaseIterable, Hashable, PickerSelectable {
     case smiling
     case sitting
     case eating
@@ -19,4 +19,6 @@ enum AvatarAction: String, Codable {
     case relaxing
     case fighting
     case crying
+    
+    var title: String { self.rawValue.capitalized }
 }

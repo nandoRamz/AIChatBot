@@ -33,7 +33,7 @@ struct ListFormSectionStyle<TitleButton: View>: ViewModifier {
 extension View {
     func listFormSectionStyle<TitleButton: View>(
         title: String,
-        @ViewBuilder titleButton: @escaping () -> TitleButton
+        @ViewBuilder titleButton: @escaping () -> TitleButton = { EmptyView() }
     ) -> some View {
         self
             .modifier(

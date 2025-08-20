@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AvatarLocation: String, Codable {
+enum AvatarLocation: String, Codable, CaseIterable, Hashable, PickerSelectable {
     case park
     case mall
     case museum
@@ -15,4 +15,6 @@ enum AvatarLocation: String, Codable {
     case desert
     case forest
     case space
+    
+    var title: String { self.rawValue.capitalized }
 }

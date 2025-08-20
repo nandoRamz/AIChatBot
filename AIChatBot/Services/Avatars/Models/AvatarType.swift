@@ -7,10 +7,12 @@
 
 import Foundation
 
-enum AvatarType: String, Codable, CaseIterable, Hashable {
+enum AvatarType: String, Codable, CaseIterable, Hashable, PickerSelectable {
     case man
     case woman
     case alien
     case dog
     case cat
+    
+    var title: String { self.rawValue.capitalized }
 }
