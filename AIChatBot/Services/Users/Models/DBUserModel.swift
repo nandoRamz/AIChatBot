@@ -22,7 +22,7 @@ extension DBUserModel {
     static var mocks: [DBUserModel] {
         [
             .init(
-                id: UUID().uuidString,
+                id: "user_001",
                 didCompleteOnboarding: true,
                 profileHexColor: "#3498db", // blue
                 createdAt: .make(year: 2025, month: 1, day: 17)

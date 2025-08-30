@@ -9,7 +9,7 @@ import Foundation
 
 typealias DBMessageModelKeys = DBMessageModel.CodingKeys
 
-struct DBMessageModel: Codable {
+struct DBMessageModel: Codable, Hashable {
     var id: String
     var creatorId: String
     var chatId: String
@@ -44,7 +44,7 @@ extension DBMessageModel {
             ),
             .init(
                 id: "msg_002",
-                creatorId: "user_002",
+                creatorId: "alpha",
                 chatId: "chat_001",
                 text: "All good here, just got back from the gym.",
                 seenByIds: ["user_001", "user_003"],
@@ -52,7 +52,7 @@ extension DBMessageModel {
             ),
             .init(
                 id: "msg_003",
-                creatorId: "user_003",
+                creatorId: "user_001",
                 chatId: "chat_001",
                 text: "Nice, what did you hit today?",
                 seenByIds: ["user_001", "user_002"],
@@ -60,7 +60,7 @@ extension DBMessageModel {
             ),
             .init(
                 id: "msg_004",
-                creatorId: "user_001",
+                creatorId: "alpha",
                 chatId: "chat_002",
                 text: "Don’t forget we have a meeting later at 3pm.",
                 seenByIds: [],
@@ -68,7 +68,7 @@ extension DBMessageModel {
             ),
             .init(
                 id: "msg_005",
-                creatorId: "user_004",
+                creatorId: "alpha",
                 chatId: "chat_003",
                 text: "Happy Birthday 🎉🥳",
                 seenByIds: ["user_001", "user_002", "user_003"],

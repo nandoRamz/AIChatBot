@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListFormSectionStyle<TitleButton: View>: ViewModifier {
     var title: String
+    var titlePadding: CGFloat = 32
     @ViewBuilder var titleButton: TitleButton
     
     func body(content: Content) -> some View {
@@ -23,7 +24,7 @@ struct ListFormSectionStyle<TitleButton: View>: ViewModifier {
                 
                 titleButton
             }
-            .padding(.horizontal)
+            .padding(.horizontal, titlePadding)
             
             content
         }
@@ -33,12 +34,14 @@ struct ListFormSectionStyle<TitleButton: View>: ViewModifier {
 extension View {
     func listFormSectionStyle<TitleButton: View>(
         title: String,
+        titlePadding: CGFloat = 32,
         @ViewBuilder titleButton: @escaping () -> TitleButton = { EmptyView() }
     ) -> some View {
         self
             .modifier(
                 ListFormSectionStyle(
                     title: title,
+                    titlePadding: titlePadding,
                     titleButton: titleButton
                 )
             )

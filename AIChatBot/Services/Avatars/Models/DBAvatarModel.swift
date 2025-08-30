@@ -47,7 +47,7 @@ extension DBAvatarModel {
     static var mocks: [DBAvatarModel] {
         [
             .init(
-                id: UUID().uuidString,
+                id: "alpha",
                 creatorId: UUID().uuidString,
                 name: "Alpha",
                 type: .alien,

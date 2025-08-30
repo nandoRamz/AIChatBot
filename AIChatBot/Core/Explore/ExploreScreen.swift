@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct ExploreScreen: View {
+    @State private var navManager = NavigationManager()
+    
     let featuredAvatars = DBAvatarModel.mocks
     let categories = AvatarType.allCases
     let popularAvatars = DBAvatarModel.mocks
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $navManager.path) {
             ScrollView {
-                featureAvatarsSection
-                avatarCategoriesSection
-                popularAvatarsSection
+                VStack(spacing: 32) {
+                    featureAvatarsSection
+                    avatarCategoriesSection
+                    popularAvatarsSection
+                }
             }
             .navigationTitle("Explore")
+            .avatarChatDestination()
+            .toolbar(.visible, for: .tabBar)
         }
     }
 }
@@ -36,6 +42,9 @@ extension ExploreScreen {
                     description: avatar.characterDescription,
                     imageUrl: avatar.imageUrl
                 )
+                .onTapGesture {
+                    navManager.path.append(avatar)
+                }
             }
         )
         .frame(height: 200)
@@ -53,7 +62,8 @@ extension ExploreScreen {
                 )
             }
         )
-        .frame(height: 150)
+        .frame(height: 125)
+        .listFormSectionStyle(title: "Categories")
         .contentMargins(.horizontal, 16)
     }
     
@@ -62,8 +72,10 @@ extension ExploreScreen {
             items: popularAvatars,
             content: { avatar in
                 PopularAvatarCell(avatar: avatar)
+                    
             }
         )
+        .listFormSectionStyle(title: "Popular", titlePadding: 16)
         .padding(.horizontal, 16)
     }
 }
