@@ -70,6 +70,10 @@
 		ABD918782E6354B700A5B20F /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918772E6354B700A5B20F /* CustomAlert.swift */; };
 		ABD9187A2E6355D900A5B20F /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918792E6355D900A5B20F /* Binding+Extension.swift */; };
 		ABD9187D2E636F4C00A5B20F /* AvatarChat+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9187C2E636F4C00A5B20F /* AvatarChat+Destination.swift */; };
+		ABD918802E63F1FA00A5B20F /* AvatarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9187F2E63F1FA00A5B20F /* AvatarsScreen.swift */; };
+		ABD918832E63F4AF00A5B20F /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918822E63F4AF00A5B20F /* AvatarCell.swift */; };
+		ABD918852E6492BC00A5B20F /* Avatars+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918842E6492BC00A5B20F /* Avatars+Destination.swift */; };
+		ABD918872E64A58D00A5B20F /* StretchyImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD918862E64A58D00A5B20F /* StretchyImageViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +140,10 @@
 		ABD918772E6354B700A5B20F /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		ABD918792E6355D900A5B20F /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
 		ABD9187C2E636F4C00A5B20F /* AvatarChat+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AvatarChat+Destination.swift"; sourceTree = "<group>"; };
+		ABD9187F2E63F1FA00A5B20F /* AvatarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsScreen.swift; sourceTree = "<group>"; };
+		ABD918822E63F4AF00A5B20F /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		ABD918842E6492BC00A5B20F /* Avatars+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Avatars+Destination.swift"; sourceTree = "<group>"; };
+		ABD918862E64A58D00A5B20F /* StretchyImageViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyImageViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +227,7 @@
 				AB9351132E50E3C4002B722D /* ImageLoaderViewBuilder.swift */,
 				AB9351362E52887C002B722D /* CarouselViewBuilder.swift */,
 				AB9351432E538402002B722D /* ListViewBuilder.swift */,
+				ABD918862E64A58D00A5B20F /* StretchyImageViewBuilder.swift */,
 			);
 			path = "Global Components";
 			sourceTree = "<group>";
@@ -371,6 +380,7 @@
 				AB9351122E50D594002B722D /* ----- Screens ----- */,
 				ABD918612E57474800A5B20F /* Avatar Chat Screen */,
 				ABD918562E56683E00A5B20F /* Create Avatar */,
+				ABD9187E2E63F15600A5B20F /* AvatarsScreen */,
 				AB9351092E50CE8E002B722D /* Settings */,
 			);
 			path = Core;
@@ -503,8 +513,26 @@
 			isa = PBXGroup;
 			children = (
 				ABD9187C2E636F4C00A5B20F /* AvatarChat+Destination.swift */,
+				ABD918842E6492BC00A5B20F /* Avatars+Destination.swift */,
 			);
 			path = "Global Destinations";
+			sourceTree = "<group>";
+		};
+		ABD9187E2E63F15600A5B20F /* AvatarsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ABD9187F2E63F1FA00A5B20F /* AvatarsScreen.swift */,
+				ABD918812E63F47100A5B20F /* Components */,
+			);
+			path = AvatarsScreen;
+			sourceTree = "<group>";
+		};
+		ABD918812E63F47100A5B20F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ABD918822E63F4AF00A5B20F /* AvatarCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +654,8 @@
 				AB93512C2E526AC9002B722D /* AvatarDescriptionHelper.swift in Sources */,
 				AB5C35E52E4FFF3B001613EC /* WelcomeScreen.swift in Sources */,
 				ABD918662E57497700A5B20F /* MessageCell.swift in Sources */,
+				ABD918872E64A58D00A5B20F /* StretchyImageViewBuilder.swift in Sources */,
+				ABD918852E6492BC00A5B20F /* Avatars+Destination.swift in Sources */,
 				ABD9184E2E565A3200A5B20F /* AccountSetting.swift in Sources */,
 				ABD9186C2E58A4C900A5B20F /* UIAlert.swift in Sources */,
 				ABD9183A2E54BC1500A5B20F /* DBMessageModel.swift in Sources */,
@@ -652,7 +682,9 @@
 				AB9351302E526BE8002B722D /* AvatarAction.swift in Sources */,
 				ABD918602E56780E00A5B20F /* SingleFormRowStyle.swift in Sources */,
 				AB9351422E5380FC002B722D /* PopularAvatarCell.swift in Sources */,
+				ABD918802E63F1FA00A5B20F /* AvatarsScreen.swift in Sources */,
 				AB5C35D42E4FFA8D001613EC /* SystemImage.swift in Sources */,
+				ABD918832E63F4AF00A5B20F /* AvatarCell.swift in Sources */,
 				AB9351322E526BFA002B722D /* AvatarLocation.swift in Sources */,
 				AB93513E2E5371E9002B722D /* GradientBackgroundStyle.swift in Sources */,
 				ABD918782E6354B700A5B20F /* CustomAlert.swift in Sources */,

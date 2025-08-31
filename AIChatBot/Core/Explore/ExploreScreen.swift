@@ -25,6 +25,7 @@ struct ExploreScreen: View {
             }
             .navigationTitle("Explore")
             .avatarChatDestination()
+            .avatarsDestination(navManager: navManager)
             .toolbar(.visible, for: .tabBar)
         }
     }
@@ -60,6 +61,9 @@ extension ExploreScreen {
                     title: category.rawValue.capitalized,
                     imageUrl: Constants.randomImageUrl
                 )
+                .onTapGesture {
+                    navManager.path.append(category)
+                }
             }
         )
         .frame(height: 125)
@@ -72,7 +76,9 @@ extension ExploreScreen {
             items: popularAvatars,
             content: { avatar in
                 PopularAvatarCell(avatar: avatar)
-                    
+                    .onTapGesture {
+                        navManager.path.append(avatar)
+                    }
             }
         )
         .listFormSectionStyle(title: "Popular", titlePadding: 16)
